@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous Rejoindre - Destination Guinée</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-flag">🇬🇳</span>
+                <span class="logo-text">Destination Guinée</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipe.html" class="nav-link">Notre Équipe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cagnotte.html" class="nav-link">Faire un Don</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Nous Rejoindre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Contact -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-header">
+                <h1>Rejoignez-nous le <span class="highlight">21 Décembre</span></h1>
+                <p class="contact-subtitle">Soyez acteur du plus grand nettoyage citoyen de Conakry</p>
+                
+                <div class="countdown">
+                    <div class="countdown-title">Jours restants avant l'événement :</div>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Jours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Heures</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carte des Points de RDV -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Points de Rendez-vous à Conakry</h2>
+            <p class="section-subtitle">Retrouvez-nous dans différents quartiers de la ville</p>
+            
+            <div class="map-container">
+                <div class="map-image">
+                    <img src="images/carte-contact.jpg" alt="Carte de Conakry avec points de rendez-vous">
+                    <div class="map-points">
+                        <div class="map-point" style="top: 30%; left: 25%;">
+                            <div class="point-marker">📍</div>
+                            <div class="point-info">
+                                <strong>Point Central</strong>
+                                <span>Place de la République</span>
+                                <span>🕘 8h00</span>
+                            </div>
+                        </div>
+                        <div class="map-point" style="top: 45%; left: 60%;">
+                            <div class="point-marker">📍</div>
+                            <div class="point-info">
+                                <strong>Quartier Sud</strong>
+                                <span>Marché de Madina</span>
+                                <span>🕘 8h30</span>
+                            </div>
+                        </div>
+                        <div class="map-point" style="top: 70%; left: 40%;">
+                            <div class="point-marker">📍</div>
+                            <div class="point-info">
+                                <strong>Zone Portuaire</strong>
+                                <span>Port de Conakry</span>
+                                <span>🕘 9h00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-legend">
+                    <h3>Informations Pratiques</h3>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #ff6b6b;"></span>
+                            <span>🕘 Début : 8h00 - 9h00</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #4ecdc4;"></span>
+                            <span>🎯 Équipement fourni sur place</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #45b7d1;"></span>
+                            <span>👕 Tenue confortable recommandée</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de Participation -->
+    <section class="participation-form">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2>Pré-inscription volontaire</h2>
+                    <p>Indiquez-nous votre participation pour mieux organiser la journée</p>
+                    
+                    <div class="form-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✅</span>
+                            <span>Recevez les dernières infos</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✅</span>
+                            <span>Accès prioritaire au matériel</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✅</span>
+                            <span>Invitation aux briefings</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="participation-form" id="volunteer-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Adresse email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Point de rendez-vous préféré *</label>
+                        <select id="location" name="location" required>
+                            <option value="">Choisissez un point de RDV</option>
+                            <option value="republic">Place de la République (8h00)</option>
+                            <option value="madina">Marché de Madina (8h30)</option>
+                            <option value="port">Port de Conakry (9h00)</option>
+                            <option value="other">Je déciderai sur place</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="group">Nombre de personnes</label>
+                        <select id="group" name="group">
+                            <option value="1">Seul(e)</option>
+                            <option value="2-5">2-5 personnes</option>
+                            <option value="6-10">6-10 personnes</option>
+                            <option value="10+">Plus de 10 personnes</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Recevoir les actualités de Destination Guinée</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span>Je m'inscris comme volontaire</span>
+                        <span class="btn-icon">👥</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Dois-je apporter mon matériel ?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Non, tout le matériel nécessaire (gilets, sacs, gants) sera fourni sur place. Venez simplement avec votre bonne humeur !</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Y a-t-il un âge minimum ?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les mineurs sont acceptés s'ils sont accompagnés d'un adulte responsable. Recommandé à partir de 12 ans.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Que se passe-t-il en cas de pluie ?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'événement est maintenu sauf conditions météo extrêmes. Suivez nos réseaux pour les updates.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>❓</span>
+                        <h3>Puis-je venir seulement pour quelques heures ?</h3>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui ! Chaque minute compte. Venez quand vous pouvez, même pour une heure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>d@destinationguinee</p>
+                    <small>Pour toute question</small>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <h3>TikTok</h3>
+                    <p>@destinationguinee</p>
+                    <small>Suivez nos actualités</small>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">🕘</div>
+                    <h3>Horaires</h3>
+                    <p>21 Décembre 2025</p>
+                    <small>8h00 - 18h00</small>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Lieux</h3>
+                    <p>Conakry</p>
+                    <small>Multiple points de RDV</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à faire la différence ?</h2>
+                <p>Rejoignez des milliers de volontaires pour redonner à Conakry la fierté et la propreté qu'elle mérite.</p>
+                <div class="cta-buttons">
+                    <a href="#volunteer-form" class="btn btn-primary">M'inscrire Maintenant</a>
+                    <a href="cagnotte.html" class="btn btn-secondary">Faire un Don</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Destination Guinée</h3>
+                    <p>Ensemble, faisons briller la Guinée</p>
+                    <div class="hashtags">
+                        #DestinationGuinee #21Decembre #JeDonneJePartage #nettoieconakry
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Coordonnées</h4>
+                    <ul>
+                        <li>📧 d@destinationguinee</li>
+                        <li>📱 @destinationguinee</li>
+                        <li>📍 Conakry, Guinée</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Événement</h4>
+                    <ul>
+                        <li>📅 21 Décembre 2025</li>
+                        <li>🕘 8h00 - 18h00</li>
+                        <li>👥 Ouvert à tous</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Urgences</h4>
+                    <p>Le jour J, contactez les coordinateurs sur place aux points de RDV.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Destination Guinée. Tous droits réservés.</p>
+                <p>Faisons de Conakry un exemple pour l'Afrique ! 🌍</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+                              </html>
