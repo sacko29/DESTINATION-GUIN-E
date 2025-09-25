@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un Don - Destination Guinée</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/cagnotte.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-flag">🇬🇳</span>
+                <span class="logo-text">Destination Guinée</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="equipe.html" class="nav-link">Notre Équipe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cagnotte.html" class="nav-link active">Faire un Don</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Nous Rejoindre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Cagnotte -->
+    <section class="cagnotte-hero">
+        <div class="container">
+            <div class="cagnotte-header">
+                <h1>Faites un <span class="highlight">Don</span></h1>
+                <p class="cagnotte-subtitle">Chaque euro compte pour rendre cette journée inoubliable</p>
+                
+                <!-- Compteur principal -->
+                <div class="main-counter">
+                    <div class="counter-stats">
+                        <div class="stat-box">
+                            <span class="stat-number">1 689€</span>
+                            <span class="stat-label">Collectés</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">112</span>
+                            <span class="stat-label">Participants</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">20 000€</span>
+                            <span class="stat-label">Objectif</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Barre de progression -->
+                    <div class="progress-container large">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 8.45%"></div>
+                            <div class="progress-text">8.45% de l'objectif atteint</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Utilisation des Dons -->
+    <section class="don-usage">
+        <div class="container">
+            <h2>Votre don en action</h2>
+            <p class="lead">Chaque euro sera utilisé pour l'action terrain :</p>
+            
+            <div class="usage-grid">
+                <div class="usage-item">
+                    <div class="usage-icon">🦺</div>
+                    <h3>Gilets fluorescents</h3>
+                    <p>Pour la sécurité des volontaires</p>
+                </div>
+                <div class="usage-item">
+                    <div class="usage-icon">🗑️</div>
+                    <h3>Sacs et outils</h3>
+                    <p>Matériel de collecte professionnel</p>
+                </div>
+                <div class="usage-item">
+                    <div class="usage-icon">🚚</div>
+                    <h3>Transport et logistique</h3>
+                    <p>Déplacement du matériel et des équipes</p>
+                </div>
+                <div class="usage-item">
+                    <div class="usage-icon">📢</div>
+                    <h3>Sensibilisation</h3>
+                    <p>Communication dans les quartiers</p>
+                </div>
+                <div class="usage-item">
+                    <div class="usage-icon">👥</div>
+                    <h3>Mobilisation</h3>
+                    <p>Organisation des volontaires</p>
+                </div>
+                <div class="usage-item">
+                    <div class="usage-icon">💝</div>
+                    <h3>Rémunération symbolique</h3>
+                    <p>Pour les bénévoles les plus engagés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Lien CotizUp -->
+    <section class="cotizup-link">
+        <div class="container">
+            <div class="cotizup-card">
+                <div class="cotizup-header">
+                    <div class="platform-logo">🔒</div>
+                    <div class="platform-info">
+                        <h3>Plateforme 100% sécurisée</h3>
+                        <p>Transactions cryptées en SSL/HTTPS</p>
+                    </div>
+                </div>
+                
+                <div class="donation-options">
+                    <h4>Montants suggérés :</h4>
+                    <div class="amount-buttons">
+                        <button class="amount-btn" data-amount="5">5€</button>
+                        <button class="amount-btn" data-amount="10">10€</button>
+                        <button class="amount-btn" data-amount="20">20€</button>
+                        <button class="amount-btn" data-amount="50">50€</button>
+                        <button class="amount-btn" data-amount="100">100€</button>
+                        <div class="custom-amount">
+                            <input type="number" placeholder="Autre montant" class="custom-input">
+                            <span class="currency">€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bouton principal vers CotizUp -->
+                <a href="https://www.cotizup.com/nettoieconakry" class="cotizup-btn" target="_blank">
+                    <span class="btn-icon">💙</span>
+                    <span class="btn-text">Faire un don sur CotizUp</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+
+                <div class="security-note">
+                    <p>⚠️ <strong>Important :</strong> Vous serez redirigé vers la plateforme CotizUp pour finaliser votre don de manière sécurisée. Nous ne collectons pas directement les fonds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Liste des Derniers Donateurs -->
+    <section class="donators-section">
+        <div class="container">
+            <h2>Derniers donateurs</h2>
+            <p class="section-subtitle">Un grand merci à tous nos généreux contributeurs !</p>
+            
+            <div class="donators-container">
+                <!-- Colonne Plus récents -->
+                <div class="donators-column">
+                    <h3>Plus récents</h3>
+                    <div class="donators-list">
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 30€</span>
+                            <span class="donator-name">par un anonyme</span>
+                            <span class="donation-date">Il y a 2 jours</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 10€</span>
+                            <span class="donator-name">par Amatxi</span>
+                            <span class="donation-date">Il y a 9 jours</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 5€</span>
+                            <span class="donator-name">par Cherif Sidiki</span>
+                            <span class="donation-date">Il y a 16 jours</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 10€</span>
+                            <span class="donator-name">par un anonyme</span>
+                            <span class="donation-date">Il y a 20 jours</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 7€</span>
+                            <span class="donator-name">par Ibrahima</span>
+                            <span class="donation-date">Il y a 24 jours</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 10€</span>
+                            <span class="donator-name">par un anonyme</span>
+                            <span class="donation-date">Il y a 27 jours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colonne Plus élevés -->
+                <div class="donators-column">
+                    <h3>Plus élevés</h3>
+                    <div class="donators-list">
+                        <div class="donator-item highlight">
+                            <span class="donation-amount">+ 250€</span>
+                            <span class="donator-name">par Diallo Alpha</span>
+                            <span class="donation-date">Le 10 août 2025</span>
+                            <span class="special-badge">❤️❤️❤️❤️</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 100€</span>
+                            <span class="donator-name">par un anonyme</span>
+                            <span class="donation-date">Le 10 août 2025</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 50€</span>
+                            <span class="donator-name">par Sebastien Geroult</span>
+                            <span class="donation-date">Le 10 août 2025</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 50€</span>
+                            <span class="donator-name">par un anonyme</span>
+                            <span class="donation-date">Le 12 août 2025</span>
+                        </div>
+                        <div class="donator-item">
+                            <span class="donation-amount">+ 50€</span>
+                            <span class="donator-name">par Oumou</span>
+                            <span class="donation-date">Le 12 août 2025</span>
+                        </div>
+                        <div class="donator-item private">
+                            <span class="donation-amount">PRIVÉ</span>
+                            <span class="donator-name">par Laura Cals</span>
+                            <span class="donation-date">Le 12 août 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="donators-cta">
+                <p class="thank-you">Un grand merci pour cette belle initiative !!!</p>
+                <button class="show-more-btn">Afficher plus de participants</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Partage -->
+    <section class="share-section">
+        <div class="container">
+            <div class="share-content">
+                <h2>Votre soutien passe aussi par le partage !</h2>
+                <p>1 partage = plus de visibilité = plus de chances de trouver des donateurs</p>
+                
+                <div class="share-buttons">
+                    <button class="share-btn large whatsapp">
+                        <span class="btn-icon">📱</span>
+                        Partager sur WhatsApp
+                    </button>
+                    
+                    <div class="social-buttons">
+                        <button class="share-btn twitter">Twitter</button>
+                        <button class="share-btn facebook">Facebook</button>
+                        <button class="share-btn sms">SMS</button>
+                    </div>
+                    
+                    <div class="link-copy">
+                        <input type="text" value="https://www.cotizup.com/nettoieconakry" readonly class="link-input">
+                        <button class="copy-btn">Copier le lien</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Destination Guinée</h3>
+                    <p>Ensemble, faisons briller la Guinée</p>
+                    <div class="hashtags">
+                        #DestinationGuinee #21Decembre #JeDonneJePartage #nettoieconakry
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>À propos de CotizUp</h4>
+                    <p>Plateforme sécurisée permettant à chacun de lancer une cagnotte en ligne pour toutes les occasions.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Garanties</h4>
+                    <ul>
+                        <li>✅ Transactions sécurisées</li>
+                        <li>✅ Don 100% dédié à l'action</li>
+                        <li>✅ Reçu disponible</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Questions ?</h4>
+                    <p>Contactez-nous : <a href="mailto:d@destinationguinee">d@destinationguinee</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Destination Guinée. Tous droits réservés.</p>
+                <p>Redirection vers CotizUp • Site sécurisé 🔒</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cagnotte.js"></script>
+</body>
+  </html>
