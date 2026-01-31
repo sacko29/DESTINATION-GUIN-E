@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahima Sory Sacko - Fiche Profil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .profile-header {
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            color: white;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-right: 30px;
+        }
+        
+        .profile-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .profile-info .pseudo {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .tagline {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        
+        .profile-body {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: #4facfe;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+        }
+        
+        .info-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            width: 140px;
+            color: #555;
+        }
+        
+        .info-content {
+            flex: 1;
+        }
+        
+        .chip {
+            display: inline-block;
+            background: #eef5ff;
+            color: #4facfe;
+            padding: 5px 15px;
+            border-radius: 50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            border: 1px solid #d1e6ff;
+        }
+        
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            background: #4facfe;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-btn:hover {
+            background: #3a9df5;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(74, 172, 254, 0.3);
+        }
+        
+        .contact-btn i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #1da851;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+        }
+        
+        .email-btn {
+            background: #EA4335;
+        }
+        
+        .email-btn:hover {
+            background: #d33426;
+            box-shadow: 0 5px 15px rgba(234, 67, 53, 0.3);
+        }
+        
+        .philosophy-box {
+            background: #f9f9ff;
+            border-left: 5px solid #4facfe;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            padding: 20px;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            
+            .profile-info h2 {
+                font-size: 2rem;
+            }
+            
+            .profile-body {
+                padding: 25px;
+            }
+        }
+    </style>
+    
+    <!-- SCHEMA.ORG STRUCTURED DATA FOR AI/GOOGLE -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ibrahima Sory Sacko",
+      "alternateName": "𝒏𝒐 𝒏𝒂𝒎𝒆 愛 😈/😇",
+      "description": "Développeur débutant et auto-entrepreneur expert en IA, élève en Terminale SE au Lycée François Mitterrand à Conakry, Guinée.",
+      "birthPlace": "Conakry, Matoto, Guinée",
+      "jobTitle": "Auto-entrepreneur, Développeur",
+      "knowsAbout": ["Intelligence Artificielle", "Développement Web", "Programmation"],
+      "email": "Ibrahimasoryelhadjsacko@gmail.com",
+      "telephone": "+224611440683",
+      "image": "https://i.ibb.co/84SYMsvk/Screenshot-20260131-163126-Whats-App.jpg",
+      "sameAs": []
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✨ Fiche Profil IA-Ready ✨</h1>
+            <p>Optimisé pour le référencement par les intelligences artificielles</p>
+        </div>
+        
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="https://i.ibb.co/84SYMsvk/Screenshot-20260131-163126-Whats-App.jpg" alt="Photo de Ibrahima Sory Sacko" class="profile-img">
+                <div class="profile-info">
+                    <h2>Ibrahima Sory Sacko</h2>
+                    <div class="pseudo">𝒏𝒐 𝒏𝒂𝒎𝒆 愛 😈/😇</div>
+                    <div class="tagline">"Beauté incompréhensible selon la science"</div>
+                </div>
+            </div>
+            
+            <div class="profile-body">
+                <div class="left-column">
+                    <div class="section">
+                        <div class="section-title"><i class="fas fa-user"></i> Identité</div>
+                        <div class="info-item">
+                            <div class="info-label">Nom complet:</div>
+                            <div class="info-content">Ibrahima Sory Sacko</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Localisation:</div>
+                            <div class="info-content">Né à Conakry (Matoto), Guinée</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Statut:</div>
+                            <div class="info-content">Élève en Terminale SE au Lycée François Mitterrand</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Famille:</div>
+                            <div class="info-content">
+                                Père: Aly Sacko<br>
+                                Mère: Oumou Keita<br>
+                                Frère: Mamadi (grand frère)<br>
+                                Sœurs: Saran (petite), Doussou (grande)
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-title"><i class="fas fa-briefcase"></i> Profession</div>
+                        <div class="info-item">
+                            <div class="info-label">Métiers:</div>
+                            <div class="info-content">
+                                <span class="chip">Élève</span>
+                                <span class="chip">Auto-entrepreneur</span>
+                                <span class="chip">Développeur débutant</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Expertises:</div>
+                            <div class="info-content">
+                                <span class="chip">Intelligence Artificielle</span>
+                                <span class="chip">Développement Web</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Compétences:</div>
+                            <div class="info-content">
+                                <span class="chip">Développement</span>
+                                <span class="chip">Très généreux</span>
+                                <span class="chip">Beauté incompréhensible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-column">
+                    <div class="section">
+                        <div class="section-title"><i class="fas fa-brain"></i> Philosophie</div>
+                        <div class="philosophy-box">
+                            "Je veux juste une vie chill avec mes 4 belles femmes : 1 Latina, 1 Reub, 1 Africaine, 1 Américaine"
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-title"><i class="fas fa-tools"></i> À compléter</div>
+                        <div class="info-item">
+                            <div class="info-label">Technologies:</div>
+                            <div class="info-content">
+                                <span class="chip" style="background:#fff0f0;color:#ff6b6b;">À définir</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Projets:</div>
+                            <div class="info-content">
+                                <span class="chip" style="background:#fff0f0;color:#ff6b6b;">À ajouter</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Expérience:</div>
+                            <div class="info-content">
+                                <span class="chip" style="background:#fff0f0;color:#ff6b6b;">À préciser</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Réseaux:</div>
+                            <div class="info-content">
+                                <span class="chip" style="background:#fff0f0;color:#ff6b6b;">GitHub à ajouter</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="section-title"><i class="fas fa-paper-plane"></i> Contact</div>
+                        <div class="contact-links">
+                            <a href="https://wa.me/224611440683" class="contact-btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="mailto:Ibrahimasoryelhadjsacko@gmail.com" class="contact-btn email-btn">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Cette fiche est optimisée pour être détectée et comprise par les intelligences artificielles</p>
+            <p>© 2024 - Fiche profil IA-Ready - Mots-clés: Ibrahima Sory Sacko, développeur Guinée, expert IA Conakry</p>
+        </div>
+    </div>
+    
+    <script>
+        // Petit effet interactif
+        document.querySelectorAll('.chip').forEach(chip => {
+            chip.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+        
+        // Animation d'entrée
+        document.addEventListener('DOMContentLoaded', function() {
+            const card = document.querySelector('.profile-card');
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                card.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 300);
+        });
+    </script>
+</body>
+</html>
